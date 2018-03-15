@@ -11,13 +11,13 @@ create
 	make
 
 feature --initialization
-	make (n : STRING; pn : INTEGER)
+	make (n : STRING; player_number : INTEGER)
 		require
-			1 <= pn and pn <= 2
+			1 <= player_number and player_number <= 2
 		do
 			name := n
 			score := 0
-			if pn = 1 then
+			if player_number = 1 then
 				symbol := "X"
 			else
 				symbol := "O"
