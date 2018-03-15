@@ -17,7 +17,6 @@ feature --initialization
 		do
 			name := n
 			score := 0
-			player_number := pn
 			if pn = 1 then
 				symbol := "X"
 			else
@@ -28,7 +27,6 @@ feature --initialization
 feature {NONE} --attributes
 	name : STRING
 	score : INTEGER
-	player_number : INTEGER
 	symbol : STRING
 
 feature --commands
